@@ -22,6 +22,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { ArticulosComponent } from './components/articulos/articulos.component';
 import { ModalDialogComponent } from './components/modal-dialog/modal-dialog.component';
 import { MyInterceptor } from './shared/my-interceptor';
+import { HelloComponent } from './hello.component';
 
 @NgModule({
   imports: [
@@ -49,6 +50,7 @@ import { MyInterceptor } from './shared/my-interceptor';
     ArticulosFamiliasComponent,
     MenuComponent,
     InicioComponent,
+    HelloComponent,
     ModalDialogComponent,
     ArticulosComponent,
   ],

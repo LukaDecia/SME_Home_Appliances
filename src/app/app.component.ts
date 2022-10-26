@@ -6,5 +6,6 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Pymes' + VERSION.major;
+  name = 'Angular ' + VERSION.major;
+  Titulo = 'Pymes Demo - 2021';
 }
