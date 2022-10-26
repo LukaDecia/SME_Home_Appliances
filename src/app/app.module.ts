@@ -21,6 +21,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { ArticulosComponent } from './components/articulos/articulos.component';
 import { ModalDialogComponent } from './components/modal-dialog/modal-dialog.component';
+import { MyInterceptor } from './shared/my-interceptor';
 
 @NgModule({
   imports: [
@@ -52,7 +53,9 @@ import { ModalDialogComponent } from './components/modal-dialog/modal-dialog.com
     ArticulosComponent,
   ],
 
-  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
